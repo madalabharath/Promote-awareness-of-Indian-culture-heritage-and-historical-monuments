@@ -1,0 +1,244 @@
+<!DOCTYPE html> 
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>How to Create responsive Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" th:href="@{/css/bootstrap1.min.css}">
+    <link rel="stylesheet" th:href="@{/css/all.min.css}">
+    <link rel="stylesheet" th:href="@{/css/templatemo-style.css}">
+    <link rel="stylesheet" href="style.css"> 
+    <style type="text/css">
+    * {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+}
+.wrapper {
+	width: 1170px;
+	margin: auto;
+}
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://i.postimg.cc/YjcJg24M/aa.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.nav-area {
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+.nav-area li {
+	display: inline-block;
+}
+.nav-area li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: poppins;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.nav-area li a:hover {
+	background: #fff;
+	color: #333;
+}
+.logo {
+	float: left;
+}
+.logo img {
+	width: 100%;
+	padding: 15px 0;
+}
+.welcome-text {
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: 20% 30%;
+	text-align: center;
+}
+.welcome-text h1 {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 60px;
+}
+.welcome-text h1 span {
+	color: #00fecb;
+}
+.welcome-text a {
+	border: 1px solid #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+}
+.welcome-text a:hover {
+	background: #fff;
+	color: #333;
+}
+/*resposive*/
+
+@media (max-width:600px) {
+	.wrapper {
+		width: 100%;
+	}
+	.logo {
+		float: none;
+		width: 50%;
+		text-align: center;
+		margin: auto;
+	}
+	img {
+		width:0 ;
+	}
+	.nav-area {
+		float: none;
+		margin-top: 0;
+	}
+	.nav-area li a {
+		padding: 5px;
+		font-size: 11px;
+	}
+	.nav-area {
+		text-align: center;
+	}
+	.welcome-text {
+		width: 100%;
+		height: auto;
+		margin: 30% 0;
+	}
+	.welcome-text h1 {
+		font-size: 30px;
+	}
+}
+    
+    </style>   
+</head>
+<body>
+    <header>
+    <div class="wrapper">
+        <div class="logo">
+     >
+        </div>
+<ul class="nav-area">
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Portfolio</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+<div class="welcome-text">
+        <h1>
+TOUR <span>IN</span></h1>
+<a th:href="@{/login}">LOGIN HERE</a>
+    </div>
+</header>
+<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+      <figure class="effect-ming tm-video-item">
+        <img th:src="@{mon.jpg}" alt="Image" class="w3-image"  style="width:100%;margin-top: -1.5%;">
+          <figcaption class="d-flex align-items-center justify-content-center">
+             <h2>HISTORICAL</h2>
+            <a th:href="@{/login}">View more</a>
+           </figcaption>                    
+        </figure>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5" style="margin-left: 40%;margin-top: -19%;">
+      <figure class="effect-ming tm-video-item">
+        <img th:src="@{mon3.jpg}" alt="Image" class="img-fluid">
+          <figcaption class="d-flex align-items-center justify-content-center">
+             <h2>INDIAN HERITAGE</h2>
+            <a th:href="@{/login}">View more</a>
+           </figcaption>                    
+        </figure>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5" style="float:right;margin-top: -19%;">
+      <figure class="effect-ming tm-video-item">
+        <img th:src="@{photo_2021-11-30_09-33-15.jpg}" alt="Image" width=200% class="img-fluid">
+          <figcaption class="d-flex align-items-center justify-content-center">
+             <h2>CULTURE</h2>
+            <a th:href="@{/login}">View more</a>
+           </figcaption>                    
+        </figure>
+</div>
+<div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>This website is dedicated to inspiring interest in Indian culture, heritage, historical places, and famous monuments. Through our meticulously curated travel packages, we aim to take you on a journey where you can personally experience the stunning beauty of India and its diverse landscapes.  
+
+We want you to witness breathtaking scenes that go beyond your imagination. The growing enthusiasm of Indian travelers to explore more motivates us to meet your travel needs and exceed expectations. Our vision of providing seamless vacation experiences makes us one of the leading tour operators in the ever-expanding travel industry.  
+
+To ensure you have a fulfilling vacation and enriching experiences, our comprehensive travel services are always at your disposal. For international holidays, we equip you with essentials such as foreign exchange (Forex cards, currency notes), visas, and travel insurance.  
+
+We are pioneers in foreign exchange in America, making online forex booking simple and convenient.  
+
+Our online visa services are exceptional, simplifying the otherwise cumbersome visa application process for our customers. We also offer specialized services, including visas, forex, travel insurance, and international remittance services, tailored for students traveling abroad for education.  
+
+Whether you’re booking flights or accommodations for your trip, Virtual Tour In provides everything under one roof. We also offer cruise vacations for those seeking comfort and affordable luxury.  
+
+Our top-selling travel packages come with the best discounts for loyal customers who choose our reliable services time and again. We aim not just to be your travel agents but to be your lifelong vacation partners.  
+
+As an employee-owned travel company, our values, integrity, and commitment to exceptional customer service define us.  
+
+Our award-winning company consistently ranks as one of the best agencies in the nation (Travel Weekly, Business Travel Weekly) and is a proud member of the prestigious Signature Travel Network. This global network enables us to provide our customers with unmatched benefits and exclusive experiences.  
+
+We believe that satisfied employees lead to satisfied customers. The growth and success of our company depend on meeting our clients' needs every single day—a promise we stand by.  
+
+Virtual Tour In is closely associated with Airlines and IATA. As members of IATA’s APJC (Agency Program Joint Council), we actively engage in discussions about airline practices. Our Airlines Council fosters strong connections with both domestic and international airlines.  
+
+Additionally, Virtual Tour In works closely with the Ministry of Tourism, Government of America. We actively participate in tourism meetings organized by the government and collaborate with state tourism authorities.  
+
+  </p>
+  </div>
+  <p></p>
+  <div>
+     <h5>Explore Our Gallery</h5> 
+     <img th:src="@{image/istockphoto-530570156-1024x1024.jpg}" width="700px">
+            <img th:src="@{image/images-51209279629.jpg.webp}" width="50%">
+            <img th:src="@{image/Kuchipudi-History-1024x680.jpg}" width="750px">
+            <img th:src="@{image/20110121001107_0.jpg}" width="659px" height="495px">
+  </div>
+<div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="image/360_F_396264139_rTAqxD7w3OzHmIrzL7ZpqYo8PxYaPe07.jpg">
+    </div>
+<footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <div class="container-fluid tm-container-small">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
+                    <h3 class="tm-text-primary mb-4 tm-footer-title">About TOUR IN</h3>
+                    <p>Tour in is free Alpha 2 HTML Template for video and photo websites. You can freely use this website  layout for a pictures  with variety range of information.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                    <h3 class="tm-text-primary mb-4 tm-footer-title">Our Links</h3>
+                    <ul class="tm-footer-links pl-0">
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Our Company</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                    <a href="#" class="tm-text-gray text-right d-block mb-2">Terms of Use</a>
+                    <a href="#" class="tm-text-gray text-right d-block">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-7 col-12 px-5 mb-3">
+                    Copyright 2021 TOUR IN Company. All rights reserved.
+                </div>
+                <div class="col-lg-4 col-md-5 col-12 px-5 text-right">
+                    Designed by <a href="https://templatemo.com" class="tm-text-gray" rel="sponsored" target="_parent">Tour IN</a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

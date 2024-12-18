@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap1.min.css}">
+    <link rel="stylesheet" th:href="@{/css/all.min.css}">
+    <link rel="stylesheet" th:href="@{/css/templatemo-style.css}">
+<!--
+    
+TemplateMo 556 Catalog-Z
+
+https://templatemo.com/tm-556-catalog-z
+
+-->
+</head>
+<body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="font-weight: bold; color: blue;">
+    CONTACT US
+</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+            <a class="nav-link nav-link-1" th:href="@{/index}" style="font-weight: bold; color: blue;">Home</a>
+        </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid tm-mt-60">
+    <div class="row tm-mb-50">
+       <div class="col-lg-4 col-12 mb-5">
+    <h2 class="tm-text-primary mb-5" style="color: blue;">Your Message</h2>
+    <form id="contact-form" action="" method="POST" class="tm-contact-form mx-auto">
+        <div class="form-group">
+    <input type="text" name="name" class="form-control rounded-0" placeholder="Name"  style="color: black;" />
+</div>
+<div class="form-group">
+    <input type="email" name="email" class="form-control rounded-0" placeholder="Email" required style="color: black;" />
+</div>
+<div class="form-group">
+    <select class="form-control" id="contact-select" name="inquiry" style="color: black;">
+        <option value="-">Subject</option>
+        <option value="sales">navigate</option>
+        <option value="creative">more details</option>
+        <option value="uiux">other</option>
+    </select>
+</div>
+<div class="form-group">
+    <textarea rows="8" name="message" class="form-control rounded-0" placeholder="Message" required style="color: black;"></textarea>
+</div>
+
+        <div class="form-group tm-text-right">
+            <button type="submit" class="btn btn-primary" style="background-color: green; color: white;">Submit</button>
+        </div>
+    </form>                
+</div>
+
+
+        <!-- Our Address Section -->
+        <div class="col-lg-4 col-12 mb-5">
+            <div class="tm-address-col">
+                <h2 class="tm-text-primary mb-5" style="color: blue;">Our Address</h2>
+                <p class="tm-mb-50" style="color: black; font-size: 18px;">Koneru Lakshmaiah University, Vaddeswaram, Andhra Pradesh.<br></p>
+<address class="tm-text-gray tm-mb-50" style="color: black; font-size: 18px;">
+    Pin Code:  522501
+</address>
+<ul class="tm-contacts">
+    <li><a href="#" class="tm-text-gray" style="color: black; font-size: 18px;">Email: virtualtour@gmail.com</a></li>
+    <li><a href="#" class="tm-text-gray" style="color: black; font-size: 18px;">Mobile Number: +91 9390756146 <br>Phone Number: +91 7207137389</a></li>
+    <li><a href="#" class="tm-text-gray" style="color: black; font-size: 18px;">URL: www.virtualtour.com</a></li>
+</ul>
+
+            </div>
+        </div>
+
+        <!-- Our Location Section -->
+        <div class="col-lg-4 col-12">
+            <h2 class="tm-text-primary mb-5" style="color: blue;">Our Location</h2>
+            <div class="mapouter mb-4">
+                <div class="gmap-canvas">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4695.228292830557!2d80.620358!3d16.4418519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f0a2a073957d%3A0xe79d66babc83e470!2sK+L+UNIVERSITY%2C+Vaddeswaram%2C+Andhra+Pradesh+522303!5e0!3m2!1sen!2sin!4v1640944948720" width="600" height="450" style="border:0;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- People Section (Bharath, Swarna, Nandini) -->
+    <div class="row tm-mb-74 tm-people-row">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
+            <img src="image/b.jpg" alt="Image" class="mb-4 img-fluid">
+            <h2 class="tm-text-primary mb-4" style="color: blue;">Bharath</h2>
+            <h3 class="tm-text-secondary h5 mb-4">Team lead</h3>
+            <p class="mb-4">I ensure that app remains organized, engaging, and culturally accurate.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5" style="margin-left:8%">
+            <img src="image/swarnaM.jpg" alt="Image" class="mb-4 img-fluid">
+            <h2 class="tm-text-primary mb-4" style="color: blue;">Swarna</h2>
+            <h3 class="tm-text-secondary h5 mb-4">Member</h3>
+            <p class="mb-4">I represent the end-user perspective, ensuring the app stays relevant, enjoyable, and educational.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5" style="margin-left:17%;">
+            <img src="image/nandu.jpg" alt="Image" class="mb-4 img-fluid">
+            <h2 class="tm-text-primary mb-4" style="color: blue;">Nandini</h2>
+            <h3 class="tm-text-secondary h5 mb-4">Member</h3>
+            <p class="mb-4">I bring creativity and innovation with rich, interactive content and virtual tours.</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <div class="container-fluid tm-container-small">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
+                    <h3 class="tm-text-primary mb-4 tm-footer-title" style="color: blue;">About our VIRTUAL TOUR IN</h3>
+                    <p>The Virtual Tour feature offers an immersive exploration of India's iconic historical sites and monuments through interactive 3D models, 360-degree views, and guided narrations. Users can learn about cultural significance, engage in activities, and experience heritage from anywhere using web, mobile, or AR/VR devices.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                    <h3 class="tm-text-primary mb-4 tm-footer-title" style="color: blue;">Our Links</h3>
+                    <ul class="tm-footer-links pl-0">
+                        <li><a href="#" style="color: blue;">Advertise us</a></li>
+                        <li><a href="#" style="color: blue;">Support and Share</a></li>
+                        <li><a href="#" style="color: blue;">Our Company Details</a></li>
+                        <li><a href="#" style="color: blue;">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                    <a href="#" class="tm-text-gray text-right d-block mb-2" style="color: blue;">Terms of Use</a>
+                    <a href="#" class="tm-text-gray text-right d-block" style="color: blue;">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+    <script src="js/plugins.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
+</body>
+</html>

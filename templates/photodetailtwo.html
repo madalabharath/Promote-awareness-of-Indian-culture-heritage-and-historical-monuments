@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Temple</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap1.min.css}">
+    <link rel="stylesheet" th:href="@{/css/all.min.css}">
+    <link rel="stylesheet" th:href="@{/css/templatemo-style.css}">
+
+</head>
+<body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+           
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1 active" aria-current="page" th:href="@{/index}" style="font-weight: bold; color: blue;">
+                        HOME
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4" th:href="@{/contactus}" style="font-weight: bold; color: blue;">
+                        CONTACT US
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+        <form class="d-flex tm-search-form">
+            
+        </form>
+    </div>
+
+    <div class="container-fluid tm-container-content tm-mt-60">
+        <div class="row mb-4">
+        <h2 class="tm-text-primary mb-5" style="font-weight: bold; color:blue;">GOLDEN TEMPLE</h2>
+        </div>
+        <div class="row tm-mb-90">            
+            <div class="col-xl-8 col-lg-7 col-md-6 col-sm-12">
+                <img th:src="@{image/golden-temple-entrance-1200.jpg}" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-lg-4 col-12">
+        <h2 class="tm-text-primary mb-5" style="font-weight: bold; color:blue;">Location</h2>
+                <!-- Map -->
+                <div class="mapouter mb-4" style="height: 600;">
+                    <div class="gmap-canvas" style="height: 600;">
+                        <iframe  id="gmap-canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.5064786013554!2d74.87429621515307!3d31.619980281336808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39197ca8f667bd97%3A0x604384897626248e!2sSri%20Harmandir%20Sahib!5e0!3m2!1sen!2sin!4v1640682020103!5m2!1sen!2sin"
+                        width="800" height="600" style="border:0;" ></iframe>
+                         
+                    </div>
+                </div>               
+            </div>
+        </div>
+        <div>
+            <h3>About this place</h3>
+            <p> 
+                The Golden Temple (also known as the Harmandir Sahib, lit. 'abode of God', Punjabi pronunciation: [ɦəɾᵊmən̪d̪əɾᵊ saːɦ(ɪ)bᵊ], or the Darbār Sahib, 'exalted court', [d̪əɾᵊbaːɾᵊ saːɦ(ɪ)bᵊ]) is a gurdwara located in the city of Amritsar, Punjab, India.<br> It is the preeminent spiritual site of Sikhism.
+
+The gurdwara is built around a man-made pool (sarovar) that was completed by the fourth Sikh Guru, Guru Ram Das, in 1577.<br> In 1604, Guru Arjan placed a copy of the Adi Granth in Harmandir Sahib.[2][7] The Gurdwara was repeatedly rebuilt by the Sikhs after it became a target of persecution and was destroyed several times by the Mughal and invading Afghan armies.<br> Maharaja Ranjit Singh, after founding the Sikh Empire, rebuilt it in marble and copper in 1809, and overlaid the sanctum with Gold foil in 1830. This has led to the name the Golden Temple.<br>
+
+The Golden Temple is spiritually the most significant shrine in Sikhism. It became a center of the Singh Sabha Movement between 1883 and 1920s, and the Punjabi Suba movement between 1947 and 1966. <br>In the early 1980s, the Gurdwara became a center of conflict between the Indian government led by Indira Gandhi, some radical Sikh groups, and a movement led by Jarnail Singh Bhindranwale. In 1984, Prime Minister Indira Gandhi sent in the Indian Army as part of Operation Blue Star, leading to deaths of over 1,000 soldiers and civilians, as well as causing much damage to the Gurdwara and the destruction of Akal Takht. The Gurdwara complex was rebuilt again after the 1984 damage.<br>
+
+The Golden Temple is an open house of worship for all people, from all walks of life and faiths.<br>It has a square plan with four entrances, and a circumambulation path around the pool. The complex is a collection of buildings around the sanctum and the pool.[2] One of these is Akal Takht, the chief center of religious authority of Sikhism.[4] Additional buildings include a clock tower, the offices of the Gurdwara Committee, a Museum and a langar – a free Sikh community–run kitchen that serves a simple vegetarian meal to all visitors without discrimination.<br> Over 100,000 people visit the holy shrine daily for worship.[13] The Gurdwara complex has been nominated as a UNESCO World Heritage Site, and its application is pending on the tentative list of UNESCO.
+            </p>
+        </div>
+        <div>
+            <h5>History</h5>
+            <p>
+                According to the Sikh historical records, the land that became Amritsar and houses the Harimandir Sahib was chosen by Guru Amar Das, the third Guru of the Sikh tradition. It was then called Guru Da Chakk, after he had asked his disciple Ram Das to find land to start a new town with a man-made pool as its central point.<br> After Guru Ram Das succeeded Guru Amar Das in 1574, and in the face of hostile opposition from the sons of Guru Amar Das,[19] Guru Ram Das founded the town that came to be known as "Ramdaspur". He started by completing the pool with the help of Baba Buddha (not to be confused with the Buddha of Buddhism). Guru Ram Das built his new official centre and home next to it.<br> He invited merchants and artisans from other parts of India to settle in the new town with him.
+
+Ramdaspur town expanded during the time of Guru Arjan financed by donations and constructed by voluntary work. <br>The town grew to become the city of Amritsar, and the area grew into the temple complex). The construction activity between 1574 and 1604 is described in Mahima Prakash Vartak, a semi-historical Sikh hagiography text likely composed in 1741, and the earliest known document dealing with the lives of all the ten Gurus.<br> Guru Arjan installed the scripture of Sikhism inside the new gurdwara in 1604. Continuing the efforts of Guru Ram Das, Guru Arjan established Amritsar as a primary Sikh pilgrimage destination. He wrote a voluminous amount of Sikh scripture including the popular Sukhmani Sahib.
+           </p>
+        </div>
+        <div>
+            <h5>Construction : </h5>
+            <p>
+                Guru Ram Das acquired the land for the site. Two versions of stories exist on how he acquired this land. In one, based on a Gazetteer record, the land was purchased with Sikh donations of 700 rupees from the owners of the village of Tung. In another version, Emperor Akbar is stated to have donated the land to the wife of Guru Ram Das.<br>
+
+In 1581, Guru Arjan initiated the construction of the Gurdwara. During the construction the pool was kept empty and dry. It took 8 years to complete the first version of the Harmandir Sahib. Guru Arjan planned a gurdwara at a level lower than the city to emphasize humility and the need to efface one's ego before entering the premises to meet the Guru.<br>He also demanded that the gurdwara compound be open on all sides to emphasize that it was open to all. The sanctum inside the pool where his Guru seat was, had only one bridge to emphasize that the end goal was one, states Arvind-Pal Singh Mandair.<br>In 1589, the gurdwara made with bricks was complete. Guru Arjan is believed by some later sources to have invited the Sufi saint Mian Mir of Lahore to lay its foundation stone, signaling pluralism and that the Sikh tradition welcomed all.This belief is however unsubstantiated.[25][26] According to Sikh traditional sources such as Sri Gur Suraj Parkash Granth it was laid by Guru Arjan himself.<br>After the inauguration, the pool was filled with water. On 16 August 1604, Guru Arjan completed expanding and compiling the first version of the Sikh scripture and placed a copy of the Adi Granth in the gurdwara. He appointed Baba Buddha as the first Granthi.<br>
+
+Ath Sath Tirath, which means "shrine of 68 pilgrimages", is a raised canopy on the parkarma (circumambulation marble path around the pool).<br>> The name, as stated by W. Owen Cole and other scholars, reflects the belief that visiting this temple is equivalent to 68 Hindu pilgrimage sites in the Indian subcontinent, or that a Tirath to the Golden Temple has the efficacy of all 68 Tiraths combined.<br>> The completion of the first version of the Golden Temple was a major milestone for Sikhism, states Arvind-Pal Singh Mandair, because it provided a central pilgrimage place and a rallying point for the Sikh community, set within a hub of trade and activity.
+            </p>
+        </div>
+        <div>
+            <h5>Architecture and Design:</h5>
+            <p>Here are some inner images of this Sacred place : </p>
+            <img th:src="@{image/67e76dc03a156a27fbeba6d0f9fe17d1.jpg}" height="1000px" width="705px">
+            <img th:src="@{image/12564413854_fbbf6ffc8f_b.jpg}" height="1000px" width="705px">
+            <img th:src="@{image/istockphoto-483141396-1024x1024.jpg}" width="49%">
+            <img th:src="@{image/Golden-Temple-Entrance.jpg}" width="49%" height="450px">
+        </div>
+        <p> 
+        </p>
+        <div>
+            <h5>Mughal Empire era destruction and rebuilding : </h5>
+            <p>
+                The growing influence and success of Guru Arjan drew the attention of the Mughal Empire. Guru Arjan was arrested under the orders of the Mughal Emperor Jahangir and asked to convert to Islam.He refused, was tortured and executed in 1606 CE.<br>> Guru Arjan's son and successor Guru Hargobind left Amritsar and moved into the Shivalik Hills to avoid persecution and to save the Sikh panth.[35] For about a century after Guru Arjan's martyrdom, state Louis E. Fenech and W. H. McLeod, the Golden Temple was not occupied by the actual Sikh Gurus and it remained in hostile sectarian hands.<br>> In the 18th century, Guru Gobind Singh and his newly founded Khalsa Sikhs came back and fought to liberate it.<br> The Golden Temple was viewed by the Mughal rulers and Afghan Sultans as the center of Sikh faith and it remained the main target of persecution.
+
+<br>The Golden Temple was the center of historic events in Sikh history:<br>
+
+In 1709, the governor of Lahore sent in his army to suppress and prevent the Sikhs from gathering for their festivals of Vaisakhi and Diwali. But the Sikhs defied by gathering in the Golden Temple. In 1716, Banda Singh and numerous Sikhs were arrested and executed.<br>
+In 1737, the Mughal governor ordered the capture of the custodian of the Golden Temple named Mani Singh and executed him. He appointed Masse Khan as the police commissioner who then occupied the Temple and converted it into his entertainment center with dancing girls. He befouled the pool. Sikhs avenged the sacrilege of the Golden Temple by assassinating Masse Khan inside the Temple in August 1740.<br>
+In 1746, another Lahore official Diwan Lakhpat Rai working for Yahiya Khan, and seeking revenge for the death of his brother, filled the pool with sand. In 1749, Sikhs restored the pool when Muin ul-Mulk slackened Mughal operations against Sikhs and sought their help during his operations in Multan.<br>
+In 1757, the Afghan ruler Ahmad Shah Durrani, also known as Ahmad Shah Abdali, attacked Amritsar and desecrated the Golden Temple. He had waste poured into the pool along with entrails of slaughtered cows, before departing for Afghanistan. The Sikhs restored it again.<br>
+In 1762, Ahmad Shah Durrani returned and had the Golden Temple blown up with gunpowder. Sikhs returned and celebrated Diwali in its premises. In 1764, Baba Jassa Singh Ahluwalia collected donations to rebuild the Golden Temple. A new main gateway (Darshan Deorhi), causeway and sanctum were completed in 1776, while the floor around the pool was completed in 1784. The Sikhs also completed a canal to bring in fresh water from Ravi River for the pool.<br>
+            </p>
+        </div>
+        <div>
+            <h3>Transportation Details</h3>
+            <p>
+                Make your journey to this Sacred Place now : <br>
+                Trains : <a href="https://www.makemytrip.com/railways/listing/?classCode=&className=All%20Classes&date=20211229&destCity=Amritsar&destStn=ASR&srcCity=New%20Delhi&srcStn=NDLS">MakeMyTrip</a>
+                <br>
+                Flights : <a href="https://www.yatra.com/flights">Yatra</a>
+                <br>
+                Other transport : <a href="https://book.olacabs.com/?utm_source=book_now_top_right">OLA Cabs</a>
+            </p>
+        </div>
+
+         <!-- container-fluid, tm-container-content -->
+
+       <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <div class="container-fluid tm-container-small">
+    <div class="row">
+        <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
+            <h3 class="tm-text-primary mb-4 tm-footer-title" style="color: blue;">About our VIRTUAL TOUR IN</h3>
+            <p style="color: black;">The Virtual Tour feature offers an immersive exploration of India's iconic historical sites and monuments through interactive 3D models, 360-degree views, and guided narrations. Users can learn about cultural significance, engage in activities, and experience heritage from anywhere using web, mobile, or AR/VR devices.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+            <h3 class="tm-text-primary mb-4 tm-footer-title" style="color: blue;">Our Links</h3>
+            <ul class="tm-footer-links pl-0">
+                <li><a href="#" style="color: black;">Advertise us</a></li>
+                <li><a href="#" style="color: black;">Support and Share</a></li>
+                <li><a href="#" style="color: black;">Our Company Details</a></li>
+                <li><a href="#" style="color: black;">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+            <a href="#" class="tm-text-gray text-right d-block mb-2" style="color: black;">Terms of Use</a>
+            <a href="#" class="tm-text-gray text-right d-block" style="color: black;">Privacy Policy</a>
+        </div>
+    </div>
+</div>
+            <div class="row">
+                <div class="col-lg-8 col-md-7 col-12 px-5 mb-3">
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    
+    <script th:src="@{js/plugins.js}"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
+</body>
+</html>

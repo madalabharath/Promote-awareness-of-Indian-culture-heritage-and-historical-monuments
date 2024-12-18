@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TajMahal</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap1.min.css}">
+    <link rel="stylesheet" th:href="@{/css/all.min.css}">
+    <link rel="stylesheet" th:href="@{/css/templatemo-style.css}">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+           
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1 active" aria-current="page" th:href="@{/index}" style="font-weight: bold; color: blue;">
+                        HOME
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4" th:href="@{/contactus}" style="font-weight: bold; color: blue;">
+                        CONTACT US
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+        <form class="d-flex tm-search-form">
+            
+        </form>
+    </div>
+
+    <div class="container-fluid tm-container-content tm-mt-60">
+        <div class="row mb-4">
+        <h2 class="tm-text-primary mb-5" style="font-weight: bold; color:blue;">TAJ MAHAL</h2>
+        </div>
+        <div class="row tm-mb-90">            
+            <div class="col-xl-8 col-lg-7 col-md-6 col-sm-12">
+                <img th:src="@{image/agra.jpg}" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-lg-4 col-12">
+        <h2 class="tm-text-primary mb-5" style="font-weight: bold; color:blue;">Location</h2>
+                <!-- Map -->
+                <div class="mapouter mb-4" style="height: 600;">
+                    <div class="gmap-canvas" style="height: 600;">
+                        <iframe  id="gmap-canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.4005538501765!2d78.0399535150506!3d27.175144783015206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747121d702ff6d%3A0xdd2ae4803f767dde!2sTaj%20Mahal!5e0!3m2!1sen!2sin!4v1640162669583!5m2!1sen!2sin"
+                        width="800" height="600" style="border:0;" ></iframe>
+                         
+                    </div>
+                </div>               
+            </div>
+        </div>
+        <div>
+            <h3>About this place</h3>
+            <p>The Taj Mahal (/ˌtɑːdʒ məˈhɑːl, ˌtɑːʒ-/;[4] lit. 'Crown of the Palace', [taːdʒ ˈmɛːɦ(ə)l]),[5] is an ivory-white marble mausoleum on the right bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor Shah Jahan (r. 1628–1658) to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself. The tomb is the centrepiece of a 17-hectare (42-acre) complex, which includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a crenellated wall.
+                 <br>
+                Construction of the mausoleum was essentially completed in 1643, but work continued on other phases of the project for another 10 years. The Taj Mahal complex is believed to have been completed in its entirety in 1653 at a cost estimated at the time to be around 32 million rupees, which in 2020 would be approximately 70 billion rupees (about U.S. $1 billion). The construction project employed some 20,000 artisans under the guidance of a board of architects led by the court architect to the emperor, Ustad Ahmad Lahauri.
+                <br>
+                The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being "the jewel of Muslim art in India and one of the universally admired masterpieces of the world's heritage". It is regarded by many as the best example of Mughal architecture and a symbol of India's rich history. The Taj Mahal attracts 7–8 million visitors a year and in 2007, it was declared a winner of the New 7 Wonders of the World (2000–2007) initiative.<br>
+                Construction of the mausoleum was essentially completed in 1643, but work continued on other phases of the project for another 10 years. <br>The Taj Mahal complex is believed to have been completed in its entirety in 1653 at a cost estimated at the time to be around 32 million rupees, which in 2020 would be approximately 70 billion rupees (about U.S. $1 billion). The construction project employed some 20,000 artisans under the guidance of a board of architects led by the court architect to the emperor, Ustad Ahmad Lahauri.
+
+                <br>The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being "the jewel of Muslim art in India and one of the universally admired masterpieces of the world's heritage". It is regarded by many as the best example of Mughal architecture and a symbol of India's rich history.<br> The Taj Mahal attracts 7–8 million visitors a year and in 2007, it was declared a winner of the New 7 Wonders of the World (2000–2007) initiative.
+            </p>
+        </div>
+        <div>
+            <h5>Inspiration</h5>
+            <p>The Taj Mahal was commissioned by Shah Jahan in 1631, to be built in the memory of his wife Mumtaz Mahal, who died on 17 June that year, while giving birth to their 14th child, Gauhara Begum.<br> Construction started in 1632, and the mausoleum was completed in 1648, while the surrounding buildings and garden were finished five years later.<br> The imperial court documenting Shah Jahan's grief after the death of Mumtaz Mahal illustrates the love story held as the inspiration for the Taj Mahal.</p>
+        </div>
+        <div>
+            <h5>Architecture and design</h5>
+            <p>
+                The Taj Mahal incorporates and expands on design traditions of Indo-Islamic and earlier Mughal architecture.<br> Specific inspiration came from successful Timurid and Mughal buildings including the Gur-e Amir (the tomb of Timur, progenitor of the Mughal dynasty, in Samarkand), Humayun's Tomb which inspired the Charbagh gardens and hasht-behesht (architecture) plan of the site, Itmad-Ud-Daulah's Tomb (sometimes called the Baby Taj), and Shah Jahan's own Jama Masjid in Delhi.<br> While earlier Mughal buildings were primarily constructed of red sandstone, Shah Jahan promoted the use of white marble inlaid with semi-precious stones.<br> Buildings under his patronage reached new levels of refinement.
+            </p>
+            <img th:src="@{image/arch1.jpeg}">
+            <img th:src="@{image/arch2.jpeg}" width="50%">
+        </div>
+        <div>
+            <h5>Spectacular Features</h5>
+            <p>
+                The most spectacular feature is the marble dome that surmounts the tomb. The dome is nearly 35 metres (115 ft) high which is close in measurement to the length of the base, and accentuated by the cylindrical "drum" it sits on, which is approximately 7 metres (23 ft) high.<br> Because of its shape, the dome is often called an onion dome or amrud (guava dome). The top is decorated with a lotus design which also serves to accentuate its height. <br>The shape of the dome is emphasised by four smaller domed chattris (kiosks) placed at its corners, which replicate the onion shape of the main dome. The dome is slightly asymmetrical.<br> Their columned bases open through the roof of the tomb and provide light to the interior. Tall decorative spires (guldastas) extend from edges of base walls, and provide visual emphasis to the height of the dome. <br>The lotus motif is repeated on both the chattris and guldastas. The dome and chattris are topped by a gilded finial which mixes traditional Persian and Hindustani decorative elements.<br>
+
+The main finial was originally made of gold but was replaced by a copy made of gilded bronze in the early 19th century. This feature provides a clear example of integration of traditional Persian and Hindu decorative elements. The finial is topped by a moon, a typical Islamic motif whose horns point heavenward.<br>
+
+The minarets, which are each more than 40 metres (130 ft) tall, display the designer's penchant for symmetry. They were designed as working minarets— a traditional element of mosques, used by the muezzin to call the Islamic faithful to prayer.<br> Each minaret is effectively divided into three equal parts by two working balconies that ring the tower. At the top of the tower is a final balcony surmounted by a chattri that mirrors the design of those on the tomb.<br> The chattris all share the same decorative elements of a lotus design topped by a gilded finial. The minarets were constructed slightly outside of the plinth so that in the event of collapse, a typical occurrence with many tall constructions of the period, the material from the towers would tend to fall away from the tomb.
+            </p>
+        </div>
+        <div>
+            <h3>Transportation Details</h3>
+            <p>
+                Make your journey to Agra using these links: <br>
+                Trains : <a href="https://www.makemytrip.com/railways/">MakeMyTrip</a>
+                <br>
+                Flights : <a href="https://www.yatra.com/flights">Yatra</a>
+            </p>
+        </div>
+
+         <!-- container-fluid, tm-container-content -->
+<footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <div class="container-fluid tm-container-small">
+    <div class="row">
+        <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
+            <h3 class="tm-text-primary mb-4 tm-footer-title" style="color: blue;">About our VIRTUAL TOUR IN</h3>
+            <p style="color: black;">The Virtual Tour feature offers an immersive exploration of India's iconic historical sites and monuments through interactive 3D models, 360-degree views, and guided narrations. Users can learn about cultural significance, engage in activities, and experience heritage from anywhere using web, mobile, or AR/VR devices.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+            <h3 class="tm-text-primary mb-4 tm-footer-title" style="color: blue;">Our Links</h3>
+            <ul class="tm-footer-links pl-0">
+                <li><a href="#" style="color: black;">Advertise us</a></li>
+                <li><a href="#" style="color: black;">Support and Share</a></li>
+                <li><a href="#" style="color: black;">Our Company Details</a></li>
+                <li><a href="#" style="color: black;">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+            <a href="#" class="tm-text-gray text-right d-block mb-2" style="color: black;">Terms of Use</a>
+            <a href="#" class="tm-text-gray text-right d-block" style="color: black;">Privacy Policy</a>
+        </div>
+    </div>
+</div>
+            <div class="row">
+                <div class="col-lg-8 col-md-7 col-12 px-5 mb-3">
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    
+    <script th:src="@{js/plugins.js}"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
+</body>
+</html>
